@@ -6,9 +6,176 @@
       xmlns:local="clr-namespace:FlooringCalculator"
       mc:Ignorable="d" 
       d:DesignHeight="1024" d:DesignWidth="768"
-      Title="PageDataEntry">
+      Title="PageDataEntry"
+      Background="#011638">
 
-    <Grid>
-        
+    <Grid Margin="5">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="546"/>
+            <RowDefinition Height="262"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+
+        <StackPanel
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center" Height="96" Width="277">
+            <TextBlock Foreground="#9055A2" Style="{StaticResource PageHeaderStyle}">
+                Enter Data
+            </TextBlock>
+        </StackPanel>
+        <StackPanel
+            Grid.Column="1"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center" Height="44" Width="85">
+            <Button Foreground="#011638" Style="{StaticResource RoundButtonStyle}" Click="LaunchHelpButton_OnClick">
+                ?
+            </Button>
+        </StackPanel>
+        <StackPanel
+            Grid.Row="1"
+            Grid.Column="0"
+            Grid.ColumnSpan="2"
+            VerticalAlignment="Center" Height="466">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <StackPanel VerticalAlignment="Center">
+                    <TextBlock Style="{StaticResource ControlLabelStyle}">
+                        Room Wide [A]
+                    </TextBlock>
+                </StackPanel>
+                <StackPanel
+                    Grid.Row="0"
+                    Grid.Column="1"
+                    VerticalAlignment="Center">
+                    <TextBox x:Name="RoomWideATextBox" Style="{StaticResource NumbersTextBox}" />
+                </StackPanel>
+
+                <StackPanel 
+                    Grid.Row="1"
+                    Grid.Column="0"
+                    VerticalAlignment="Center">
+                    <TextBlock Style="{StaticResource ControlLabelStyle}">
+                        Room Long [B]
+                    </TextBlock>
+                </StackPanel>
+                <StackPanel
+                    Grid.Row="1"
+                    Grid.Column="1"
+                    VerticalAlignment="Center">
+                    <TextBox x:Name="RoomLongBTextBox" Style="{StaticResource NumbersTextBox}" />
+                </StackPanel>
+
+                <StackPanel 
+                    Grid.Row="2"
+                    Grid.Column="0"
+                    VerticalAlignment="Center">
+                    <TextBlock Style="{StaticResource ControlLabelStyle}">
+                        Cutout 1 Wide [C]
+                    </TextBlock>
+                </StackPanel>
+                <StackPanel
+                    Grid.Row="2"
+                    Grid.Column="1"
+                    VerticalAlignment="Center">
+                    <TextBox x:Name="Cutout1WideCTextBox" Style="{StaticResource NumbersTextBox}" />
+                </StackPanel>
+
+                <StackPanel 
+                    Grid.Row="3"
+                    Grid.Column="0"
+                    VerticalAlignment="Center">
+                    <TextBlock Style="{StaticResource ControlLabelStyle}">
+                        Cutout 1 Long [D]
+                    </TextBlock>
+                </StackPanel>
+                <StackPanel
+                    Grid.Row="3"
+                    Grid.Column="1"
+                    VerticalAlignment="Center">
+                    <TextBox x:Name="Cutout1LongDTextBox" Style="{StaticResource NumbersTextBox}" />
+                </StackPanel>
+
+                <StackPanel
+                    Grid.Row="4"
+                    Grid.Column="0"
+                    VerticalAlignment="Center">
+                    <TextBlock Style="{StaticResource ControlLabelStyle}">
+                        Cutout 2 Wide [E]
+                    </TextBlock>
+                </StackPanel>
+                <StackPanel
+                    Grid.Row="4"
+                    Grid.Column="1"
+                    VerticalAlignment="Center">
+                    <TextBox x:Name="Cutout2WideETextBox" Style="{StaticResource NumbersTextBox}" />
+                </StackPanel>
+
+                <StackPanel 
+                    Grid.Row="5"
+                    Grid.Column="0"
+                    VerticalAlignment="Center">
+                    <TextBlock Style="{StaticResource ControlLabelStyle}">
+                        Cutout 2 Long [F]
+                    </TextBlock>
+                </StackPanel>
+                <StackPanel
+                    Grid.Row="5"
+                    Grid.Column="1"
+                    VerticalAlignment="Center">
+                    <TextBox x:Name="Cutout2LongFTextBox" Style="{StaticResource NumbersTextBox}" />
+                </StackPanel>
+
+                <StackPanel 
+                    Grid.Row="6"
+                    Grid.Column="0"
+                    VerticalAlignment="Center">
+                    <TextBlock Style="{StaticResource ControlLabelStyle}">
+                        Choose tile size from list
+                    </TextBlock>
+                </StackPanel>
+                <StackPanel
+                    Grid.Row="6"
+                    Grid.Column="1"
+                    VerticalAlignment="Center">
+                    <ComboBox x:Name="TileComboBox" Style="{StaticResource ComboBox}" Loaded="TileComboBox_OnLoaded"/>
+                </StackPanel>
+            </Grid>
+        </StackPanel>
+
+        <StackPanel
+            Grid.Row="2"
+            Grid.Column="0"
+            VerticalAlignment="Center">
+            <Button x:Name="ClearButton" Style="{StaticResource FormButton}" Click="ClearButton_OnClick">
+                Clear
+            </Button>
+        </StackPanel>
+
+        <StackPanel
+            Grid.Row="2"
+            Grid.Column="1"
+            VerticalAlignment="Center">
+            <Button x:Name="CalculateButton" Style="{StaticResource FormButton}" Click="CalculateButton_OnClick">
+                Calculate
+            </Button>
+        </StackPanel>
     </Grid>
 </Page>

@@ -6,9 +6,69 @@
       xmlns:local="clr-namespace:FlooringCalculator"
       mc:Ignorable="d" 
       d:DesignHeight="1024" d:DesignWidth="768"
+      Background="#011638"
       Title="PageHelp">
 
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="6*" />
+            <RowDefinition Height="3*" />
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+
+        <StackPanel
+            Grid.ColumnSpan="2"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center">
+            <TextBlock Foreground="#9055A2" Style="{StaticResource PageHeaderStyle}">
+                Application Help
+            </TextBlock>
+        </StackPanel>
+
+        <StackPanel
+            Grid.Row="1"
+            Grid.Column="0"
+            Grid.ColumnSpan="2">
+            <Image
+                Width="600"
+                Margin="0,20"
+                Source="/room.jpg"/>
+        </StackPanel>
+
+        <StackPanel
+            Grid.Row="2"
+            Grid.Column="0"
+            Grid.ColumnSpan="2"
+            Margin="10"
+            VerticalAlignment="Center"
+            Background="AliceBlue">
+            <TextBlock
+                x:Name="HelpTextBlock"
+                Margin="10"
+                Padding="10"
+                VerticalAlignment="Center"
+                FontSize="18"
+                TextAlignment="Center"
+                TextWrapping="Wrap"/>
+        </StackPanel>
+
+        <StackPanel
+            Grid.Row="3"
+            Grid.Column="0"
+            Grid.ColumnSpan="2"
+            VerticalAlignment="Center">
+            <Button
+                x:Name="CloseButton"
+                Style="{StaticResource FormButton}"
+                Click="CloseButton_OnClick">
+                Close
+            </Button>
+        </StackPanel>
     </Grid>
 </Page>
