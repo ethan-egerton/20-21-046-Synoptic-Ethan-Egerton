@@ -11,6 +11,12 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+/* Title: PageHelp
+ * Author: Ethan Egerton
+ * Date: Feburary 2021
+ * Purpose: Logic for the PageHelp page
+ */
+
 namespace FlooringCalculator
 {
     /// <summary>

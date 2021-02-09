@@ -4,6 +4,12 @@ using System.Windows;
 using System.Windows.Controls;
 using FlooringCalculator.Models;
 
+/* Title: PageDataEntry
+ * Author: Ethan Egerton
+ * Date: Feburary 2021
+ * Purpose: Logic for the PageDataEntry page
+ */
+
 namespace FlooringCalculator
 {
     /// <summary>

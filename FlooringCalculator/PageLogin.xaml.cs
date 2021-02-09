@@ -3,6 +3,11 @@ using System.Windows;
 using System.Windows.Controls;
 using FlooringCalculator.Models;
 
+/* Title: PageLogin
+ * Author: Ethan Egerton
+ * Date: Feburary 2021
+ * Purpose: Logic for the PageLogin page
+ */
 
 namespace FlooringCalculator
 {
