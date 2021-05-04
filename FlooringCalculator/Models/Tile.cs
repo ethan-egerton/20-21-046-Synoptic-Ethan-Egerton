@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-/* Title: Tile
+﻿/* Title: Tile
  * Author: Ethan Egerton
  * Date: Feburary 2021
  * Purpose: Class to handle tile data
@@ -37,7 +33,7 @@ namespace FlooringCalculator.Models
             set => tileName = value;
         }
 
-        // -- Calculates the area of a tile
+        // Calculates the area of a tile
         public static decimal TileArea(Tile tile)
         {
             return tile.tileLong * tile.tileWide;

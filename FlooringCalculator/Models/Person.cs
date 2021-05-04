@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Text;
 
 /* Title: Person
  * Author: Ethan Egerton
@@ -29,19 +27,19 @@ namespace FlooringCalculator.Models
             set => personSurname = value;
         }
 
-        // -- Concatenates forename and surname
+        // Concatenates forename and surname
         public static string PersonWholeNameByForename(Person person)
         {
             return person.personForename + " " + person.personSurname;
         }
 
-        // -- Concatenates surname and forename
+        // Concatenates surname and forename
         public static string PersonWholeNameBySurname(Person person)
         {
             return person.personSurname + " " + person.personForename;
         }
 
-        // -- method to be overridden, returns the same result as PersonWholeNameByForename
+        // Method to be overridden, returns the same result as PersonWholeNameByForename
         public virtual string GetDetails()
         {
             StringBuilder stringBuilder = new StringBuilder();

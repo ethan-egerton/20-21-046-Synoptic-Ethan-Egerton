@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Text;
 
 /* Title: Data Summary
  * Author: Ethan Egerton
@@ -12,6 +10,7 @@ namespace FlooringCalculator.Models
 {
     public class DataSummary
     {
+        // Retreives the calculated data
         public string WholeRoomArea { get; set; }
         public string Cutout1Area { get; set; }
         public string Cutout2Area { get; set; }
@@ -19,7 +18,8 @@ namespace FlooringCalculator.Models
         public string TilesNeededForRoom { get; set; }
         public string LeftoverTileArea { get; set; }
         public string PerimeterLength { get; set; }
-
+        
+        // Creates string for outputting the calculated data
         public string SummaryForDisplay()
         {
             var sb = new StringBuilder();
@@ -27,7 +27,7 @@ namespace FlooringCalculator.Models
             sb.Append("Whole Room Area: ").Append(WholeRoomArea).Append(" M²").AppendLine();
             sb.Append("Cutout 1 Area: ").Append(Cutout1Area).Append(" M²").AppendLine();
             sb.Append("Cutout 2 Area: ").Append(Cutout2Area).Append(" M²").AppendLine();
-            sb.Append("Tile size calculated: ").Append(TileSizeUsed).Append(" M²").AppendLine();
+            sb.Append("Tile size calculated: ").Append(TileSizeUsed).AppendLine();
             sb.Append("Tiles needed for room: ").Append(TilesNeededForRoom).Append(" M²").AppendLine();
             sb.Append("Area of tile left over: ").Append(LeftoverTileArea).Append(" M²").AppendLine();
             sb.Append("Edging strip needed: ").Append(PerimeterLength).Append(" M²").AppendLine();

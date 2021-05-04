@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-/* Title: Room
+﻿/* Title: Room
  * Author: Ethan Egerton
  * Date: Feburary 2021
  * Purpose: Class for handling room dimension data

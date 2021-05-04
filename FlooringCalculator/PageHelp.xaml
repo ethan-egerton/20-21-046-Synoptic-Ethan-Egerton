@@ -9,23 +9,18 @@
       Background="#011638"
       Title="PageHelp">
 
-    <Grid>
+    <Grid Height="1024" VerticalAlignment="Top">
         <Grid.RowDefinitions>
-            <RowDefinition Height="*" />
-            <RowDefinition Height="*" />
-            <RowDefinition Height="6*" />
-            <RowDefinition Height="3*" />
+            <RowDefinition Height="93*" />
+            <RowDefinition Height="473*" />
+            <RowDefinition Height="279*" />
+            <RowDefinition Height="179*" />
         </Grid.RowDefinitions>
-
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition />
-            <ColumnDefinition />
-        </Grid.ColumnDefinitions>
 
         <StackPanel
             Grid.ColumnSpan="2"
-            HorizontalAlignment="Center"
-            VerticalAlignment="Center">
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center" Height="95" Margin="165,0,0,0" Width="438">
             <TextBlock Foreground="#9055A2" Style="{StaticResource PageHeaderStyle}">
                 Application Help
             </TextBlock>
@@ -33,36 +28,32 @@
 
         <StackPanel
             Grid.Row="1"
-            Grid.Column="0"
             Grid.ColumnSpan="2">
             <Image
                 Width="600"
                 Margin="0,20"
-                Source="/room.jpg"/>
+                Source="/images/room.jpg" Height="417"/>
         </StackPanel>
 
         <StackPanel
             Grid.Row="2"
             Grid.Column="0"
-            Grid.ColumnSpan="2"
-            Margin="10"
+            Margin="10,0,10,0"
             VerticalAlignment="Center"
-            Background="AliceBlue">
+            Background="AliceBlue" Height="184">
             <TextBlock
                 x:Name="HelpTextBlock"
                 Margin="10"
                 Padding="10"
-                VerticalAlignment="Center"
                 FontSize="18"
                 TextAlignment="Center"
-                TextWrapping="Wrap"/>
+                TextWrapping="Wrap" Height="191"/>
         </StackPanel>
 
         <StackPanel
-            Grid.Row="3"
+            Grid.Row="2"
             Grid.Column="0"
-            Grid.ColumnSpan="2"
-            VerticalAlignment="Center">
+            VerticalAlignment="Top" Height="90" Margin="0,278,0,0" Grid.RowSpan="2">
             <Button
                 x:Name="CloseButton"
                 Style="{StaticResource FormButton}"

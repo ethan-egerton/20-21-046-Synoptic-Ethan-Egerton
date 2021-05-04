@@ -155,7 +155,8 @@
                     Grid.Row="6"
                     Grid.Column="1"
                     VerticalAlignment="Center">
-                    <ComboBox x:Name="TileComboBox" Style="{StaticResource ComboBox}" Loaded="TileComboBox_OnLoaded"/>
+                    <ComboBox x:Name="TileComboBox" Style="{StaticResource ComboBox}" Loaded="TileComboBox_OnLoaded"
+                              SelectionChanged="TileComboBox_OnSelectionChanged"/>
                 </StackPanel>
             </Grid>
         </StackPanel>
