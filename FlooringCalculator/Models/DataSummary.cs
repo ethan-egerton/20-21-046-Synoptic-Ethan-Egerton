@@ -28,9 +28,9 @@ namespace FlooringCalculator.Models
             sb.Append("Cutout 1 Area: ").Append(Cutout1Area).Append(" M²").AppendLine();
             sb.Append("Cutout 2 Area: ").Append(Cutout2Area).Append(" M²").AppendLine();
             sb.Append("Tile size calculated: ").Append(TileSizeUsed).AppendLine();
-            sb.Append("Tiles needed for room: ").Append(TilesNeededForRoom).Append(" M²").AppendLine();
+            sb.Append("Tiles needed for room: ").Append(TilesNeededForRoom).AppendLine();
             sb.Append("Area of tile left over: ").Append(LeftoverTileArea).Append(" M²").AppendLine();
-            sb.Append("Edging strip needed: ").Append(PerimeterLength).Append(" M²").AppendLine();
+            sb.Append("Edging strip needed: ").Append(PerimeterLength).Append(" M").AppendLine();
 
             return sb.ToString();
         }

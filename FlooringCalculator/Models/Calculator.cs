@@ -97,6 +97,8 @@ namespace FlooringCalculator.Models
                 var wholeRoomArea = RoomAreas.WholeRoomArea(room);
                 var oneTileArea = tile.TileLong * tile.TileWide;
                 var areaTilesUsed = oneTileArea * NumberTilesWholeFloor(room, tile);
+
+                tempTotal = areaTilesUsed - wholeRoomArea;
             }
             // If error, error is outputted to console
             catch (Exception e)

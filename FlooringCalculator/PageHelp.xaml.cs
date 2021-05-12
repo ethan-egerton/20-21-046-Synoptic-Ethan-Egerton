@@ -32,7 +32,7 @@ namespace FlooringCalculator
         // Text box is filled with lorem ipsum text
         private string HelpText()
         {
-            return "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
+            return "This application calculates the area of tiles needed on a floor with two cutout rectangeles. To use the aoplication, enter the floors' width and length in to textboxes A and B, then input the the first cutouts' width and length in to textboxes C and D, after that, input the second cutouts' width and length into textboxes E and F, finally select the tile size.\nAfter that press the calculate button and the results will display on the summary page.";
         }
     }
 }
